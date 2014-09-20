@@ -89,11 +89,9 @@ class Solution:
                 if board[i][j] == 'O' and visited[i][j] == 0:
                     board[i][j] = 'X'
                 j += 1
-            # board[i] = ''.join(board[i])
             i += 1
 
     def visit(self, i, j, visited, board):
-        # print(i, j)
         s = []
         s.append(i)
         s.append(j)
