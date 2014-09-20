@@ -23,7 +23,7 @@ X X X X
 X X X X
 X O X X</p>
 
-<p>Problem link:https://oj.leetcode.com/problems/surrounded-regions/</p>
+<p>Problem link: <a href="https://oj.leetcode.com/problems/surrounded-regions/">https://oj.leetcode.com/problems/surrounded-regions/</a></p>
 
 <p>分析：本题的目的就是找出所有被'X'完全包围的'O',容易想到如果一个'O'可以和一个边界上的'O'连通，那这个'O'就没有被完全包围。
 所以，思路就变成，遍历所有边界上的'O',并且从它出发，找到所有连通的'O'并且作上标记。
