@@ -1,3 +1,3 @@
-highlighter: pygments
+pygments: true
 permalink: /:title
 title: MyLeetcode
