@@ -17,7 +17,7 @@ description: A message containing letters from A-Z is being encoded to numbers u
 <p>对于A[k],可以分为两种情况:</p>
 <p>(1) s[k]可以独立反解码，即处于1到9之间，那么A[k] += A[k-1]<br>
 (2) s[k:k+2)可以反解码，即处于10到26之间，那么A[k] += A[k-2]</p>
-<p>最后对于base的情况, 有A[s.length]=1, A[s.length-1]根据最后一个字符的数值情况为1为0（或者定义A[s.length+1]=0, 将A[s.length-1]泛化成一般情况）。</p> 
+<p>最后对于base的情况, 有A[s.length] = 1, A[s.length-1] 根据最后一个字符的数值情况为1为0（或者定义A[s.length+1] = 0, 将A[s.length-1]泛化成一般情况）。</p> 
 
 
 
