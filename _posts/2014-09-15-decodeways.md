@@ -19,7 +19,7 @@ description: A message containing letters from A-Z is being encoded to numbers u
 (2) s[k:k+2)可以反解码，即处于10到26之间，那么A[k] += A[k-2]</p>
 <p>最后对于base的情况, 有A[s.length] = 1, A[s.length-1] 根据最后一个字符的数值情况为1为0（或者定义A[s.length+1] = 0, 将A[s.length-1]泛化成一般情况）。</p> 
 
-
+<p>代码如下：</p>
 
 {% highlight python %}
 class Solution:
