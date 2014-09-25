@@ -11,7 +11,7 @@ description: Given a 2D board containing 'X' and 'O', capture all regions surrou
 
 <p>A region is captured by flipping all 'O's into 'X's in that surrounded region.</p>
 
-<p>For example,</br>
+<p>For example,
 X X X X  
 X O O X  
 X X O X  
