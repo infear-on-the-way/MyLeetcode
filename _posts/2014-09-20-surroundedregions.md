@@ -11,17 +11,17 @@ description: Given a 2D board containing 'X' and 'O', capture all regions surrou
 
 <p>A region is captured by flipping all 'O's into 'X's in that surrounded region.</p>
 
-For example,
+For example,  
 X X X X  
-X O O X  
-X X O X  
-X O X X
+X O O X   
+X X O X    
+X O X X  
 
-<p>After running your function, the board should be:</br>
-X X X X
-X X X X
-X X X X
-X O X X</p>
+After running your function, the board should be:  
+X X X X  
+X X X X  
+X X X X  
+X O X X  
 
 <p>Problem link: <a href="https://oj.leetcode.com/problems/surrounded-regions/">https://oj.leetcode.com/problems/surrounded-regions/</a></p>
 
