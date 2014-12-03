@@ -7,15 +7,15 @@ tags: Alogrithm
 description: Given a string s and a dictionary of words dict, add spaces in s to construct a sentence where each word is a valid dictionary word
 ---
 
-Given a string s and a dictionary of words dict, add spaces in s to construct a sentence where each word is a valid dictionary word.
+<p>Given a string s and a dictionary of words dict, add spaces in s to construct a sentence where each word is a valid dictionary word.</p>
 
-Return all such possible sentences.
+<p>Return all such possible sentences.</p>
 
-For example, given
+<p>For example, given
 s = "catsanddog",
-dict = ["cat", "cats", "and", "sand", "dog"].
+dict = ["cat", "cats", "and", "sand", "dog"].</p>
 
-A solution is ["cats and dog", "cat sand dog"].
+<p>A solution is ["cats and dog", "cat sand dog"].</p>
 
 <p>Problem link: <a href="https://oj.leetcode.com/problems/word-break-ii/">https://oj.leetcode.com/problems/word-break-ii/</a></p>
 
