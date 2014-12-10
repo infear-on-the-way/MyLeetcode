@@ -27,10 +27,14 @@ isMatch("aab", "c*a*b") → false
 <p>Problem link: <a href="https://oj.leetcode.com/problems/wildcard-matching/">https://oj.leetcode.com/problems/wildcard-matching/</a></p>
 
 <p>分析:</p>
-典型的动态规划题。虽然递归可以解决，但是在数据过大时会超时.用A(i,j)表示s[i:]和p[j:]的匹配情况：
-当s[i]==p[j] or p[j]=='?'时，A(i,j) = A(i+1,j+1)。否则当p[j]=='*'时，A(i,j)=A(i,j+1) or A(i+1,j).注意只要A(i+1,j)就够了，
-因为当A(i+1,j)为True时，*只要再多包含一个字符，就可以使得A(i,j)为True，否则A(i,j)和A(i+1,j)一样为False。
-一开始几个case没过，所以针对特殊情况作了特别处理，比如p中非*字符的个数如果大于s的长度，就直接返回False
+典型的动态规划题。虽然递归可以解决，但是在数据过大时会超时。
+
+用A(i,j)表示s[i:]和p[j:]的匹配情况：  
+当s[i]==p[j] or p[j]=='?'时，A(i,j) = A(i+1,j+1)。否则当p[j]=='*'时，A(i,j)=A(i,j+1) or A(i+1,j).注意只要A(i+1,j)就够了，  
+因为当A(i+1,j)为True时，*只要再多包含一个字符，就可以使得A(i,j)为True，否则A(i,j)和A(i+1,j)一样为False。 
+
+一开始几个case没过，所以针对特殊情况作了特别处理，比如p中非*字符的个数如果大于s的长度，就直接返回False。  
+
 <p>代码如下：</p>
 
 {% highlight python %}
