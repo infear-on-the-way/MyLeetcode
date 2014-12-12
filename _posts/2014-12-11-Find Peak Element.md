@@ -21,7 +21,7 @@ For example, in array [1, 2, 3, 1], 3 is a peak element and your function should
 
 <p>分析:</p>
 看了提示，必须要在log(n)的时间内解决，所以很容易想到二分。  
-需要注意到只要存在i使得num[i]>num[i-1]，那么num[i:]中一定会有极点，否则a[:i]中就一定会有极点。
+需要注意到只要存在i使得num[i]>num[i-1]，那么num[i:]中一定会有极点，否则num[:i]中就一定会有极点。
  
 <p>代码如下：</p>
 
